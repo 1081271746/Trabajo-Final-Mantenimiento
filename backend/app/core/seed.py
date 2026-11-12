@@ -1,6 +1,6 @@
 
-from backend.app.storage import memory
 from backend.app.models.product import Product
+from backend.app.storage import memory
 
 
 def seed_products(total: int = 500, stock: int = 500):

@@ -1,11 +1,10 @@
 
 from fastapi import FastAPI
 
+from backend.app.core.seed import seed_products
 from backend.app.routers.inventory_router import router as inventory_router
 from backend.app.routers.order_router import router as order_router
 from backend.app.routers.product_router import router as product_router
-from backend.app.core.seed import seed_products
-
 
 app = FastAPI(
     title="StockTest API",

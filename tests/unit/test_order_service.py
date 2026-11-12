@@ -2,17 +2,11 @@
 import pytest
 from fastapi import HTTPException
 
-from backend.app.schemas.product import ProductCreate
 from backend.app.schemas.order import OrderCreate
-
-from backend.app.services.product_service import create_product
+from backend.app.schemas.product import ProductCreate
 from backend.app.services.order_service import create_order
-
-from backend.app.storage.memory import (
-    products,
-    orders,
-    reset_storage
-)
+from backend.app.services.product_service import create_product
+from backend.app.storage.memory import orders, products, reset_storage
 
 
 def test_create_order_successfully():

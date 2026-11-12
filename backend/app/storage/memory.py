@@ -1,9 +1,8 @@
 
 from threading import Lock
 
-from backend.app.models.product import Product
 from backend.app.models.order import Order
-
+from backend.app.models.product import Product
 
 products: dict[int, Product] = {}
 orders: list[Order] = []

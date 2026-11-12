@@ -1,15 +1,9 @@
 
 from fastapi import APIRouter, status
 
-from backend.app.schemas.order import (
-    OrderCreate,
-    OrderResponse,
-    OrderListResponse
-)
-
+from backend.app.schemas.order import OrderCreate, OrderListResponse, OrderResponse
 from backend.app.services.order_service import create_order
 from backend.app.storage import memory
-
 
 router = APIRouter(
     prefix="/orders",

@@ -1,7 +1,7 @@
 
 from backend.app.schemas.product import ProductCreate
-from backend.app.services.product_service import create_product
 from backend.app.services.inventory_service import get_inventory
+from backend.app.services.product_service import create_product
 from backend.app.storage.memory import reset_storage
 
 

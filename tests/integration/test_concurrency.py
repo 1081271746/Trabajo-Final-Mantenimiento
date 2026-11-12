@@ -1,14 +1,13 @@
 
 from concurrent.futures import ThreadPoolExecutor
 
-from backend.app.schemas.product import ProductCreate
-from backend.app.schemas.order import OrderCreate
-
-from backend.app.services.product_service import create_product
-from backend.app.services.order_service import create_order
-from backend.app.storage import memory
-
 from fastapi import HTTPException
+
+from backend.app.schemas.order import OrderCreate
+from backend.app.schemas.product import ProductCreate
+from backend.app.services.order_service import create_order
+from backend.app.services.product_service import create_product
+from backend.app.storage import memory
 
 
 def test_concurrent_orders():

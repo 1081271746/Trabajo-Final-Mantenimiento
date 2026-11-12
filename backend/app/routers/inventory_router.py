@@ -4,7 +4,6 @@ from fastapi import APIRouter, status
 from backend.app.schemas.inventory import InventoryResponse
 from backend.app.services.inventory_service import get_inventory
 
-
 router = APIRouter(
     prefix="/inventory",
     tags=["Inventory"]

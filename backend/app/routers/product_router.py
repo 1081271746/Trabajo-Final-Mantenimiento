@@ -3,15 +3,10 @@ from fastapi import APIRouter, status
 
 from backend.app.schemas.product import (
     ProductCreate,
+    ProductListResponse,
     ProductResponse,
-    ProductListResponse
 )
-
-from backend.app.services.product_service import (
-    create_product,
-    get_products
-)
-
+from backend.app.services.product_service import create_product, get_products
 
 router = APIRouter(
     prefix="/products",

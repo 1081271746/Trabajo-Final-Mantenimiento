@@ -5,7 +5,6 @@ from fastapi.testclient import TestClient
 from backend.app.main import app
 from backend.app.storage.memory import reset_storage
 
-
 client = TestClient(app)
 
 
